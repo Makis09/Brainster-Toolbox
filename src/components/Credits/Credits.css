@@ -1,0 +1,21 @@
+.Credits{
+    padding-top: 100px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 420px) {
+    .Credits{
+        padding-top: 55px !important;
+    }
+ }
+
+@media (max-width: 600px) { 
+    .Credits{
+        font-size: 12px;
+    }
+ }
+@media (max-width: 1024px) { 
+    .Credits{
+        padding-top: 75px;
+    }
+ }

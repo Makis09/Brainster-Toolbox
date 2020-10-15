@@ -1,0 +1,28 @@
+.ClippedBackground{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 75vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.homepage-top{
+    top: 0;
+    background-color: #41187E;
+}
+.bottom{
+    bottom: 0;
+    transform: rotate(180deg);
+    background-color: #41187E;
+}
+.singleGame-top{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* @media (max-width: 600px){
+    .ClippedBackground{
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+} */

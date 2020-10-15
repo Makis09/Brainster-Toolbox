@@ -1,0 +1,63 @@
+.Register{
+    min-height: 100vh;
+    background-color: #41187E;
+    position: relative;
+    padding: 0 10%;
+}
+/* .Register .Footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+.Register h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20vh;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 40px;
+}
+.Register form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Register input[type="submit"]{
+   display: block;
+   margin: 30px auto 130px auto;
+}
+.Register textarea{
+    width: 100%;
+    font-size: 16px;
+    color: #41187E;
+    border-radius: 3px;
+}
+.textareaAndSubmitContainer{
+    margin-top: 40px;
+    width: 50%;
+    text-align: center;
+}
+@media(min-width: 1200px){
+    .Footerwrapper{
+        margin: 0 -10%;
+    }
+}
+@media(max-width: 600px){
+    .Register .Footer{
+        position: relative;
+        margin: 70px -10% 0 -10%;
+    }
+    .Register input[type="submit"]{
+        margin: 30px auto;
+    }
+}
+@media(max-width: 768px){
+    .Register{
+        padding: 0 5%;
+    }
+    .Register .Footer{
+        margin: 70px -5% 0 -5%;
+    }
+}

@@ -1,0 +1,73 @@
+.SingleGameCard{
+    width: 31%;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.3);
+    margin: 15px 1%;
+    border-radius: 10px;
+}
+.SingleGameCard img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
+.card-body{
+    background-color: white;
+    padding: 30px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.game-icon div{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 50%;
+}
+.game-icon img{
+    width: 40px;
+    height: 40px;
+}
+.time-frame{
+    display: flex;
+    margin-bottom: 10px;
+}
+.time-frame svg{
+    margin-right: 10px;
+}
+.time-frame span:first-child, .game-title, .time-frame span:last-child, .category span:last-child{
+    font-weight: bold;
+}
+.time-frame span:last-child{
+    color: rgba(0, 0, 0, 0.6);
+}
+.time-frame span:last-child{
+    font-size: 14px;
+}
+.category span:last-child{
+    color: rgb(1, 228, 228);
+    text-transform: capitalize;
+}
+.category{
+    margin-top: 20px;
+}
+@media (max-width: 1024px){ 
+    .SingleGameCard{
+        width: 48%;
+    }
+}
+@media (max-width : 600px){
+    .SingleGameCard{
+        width: 90%;
+    }
+    .SingleGameCard .card-img img{
+        display: none;
+    }
+    .card-body{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 140px;
+    }
+}

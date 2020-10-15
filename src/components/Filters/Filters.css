@@ -1,0 +1,92 @@
+.AllFilters{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(233, 229, 229);
+    padding: 15px;
+    z-index: 1;
+    transition: all 0.5s ease ;
+}
+.AllFilters h5{
+    margin: 0 0 5px 0;
+}
+.browse-category{
+    width: 50%;
+}
+.browse-timeframe{
+    width: 33%;
+}
+.browse-groupsize{
+    width: 16%;
+}
+.AllFilters button, .AllFilters label{
+    margin: 0.5%;
+    height: 45px;
+    border: 1px solid rgb(100, 42, 187);
+    color: rgb(100, 42, 187);
+    font-weight: bold;
+}
+.browse-category button{
+    width: 32%;
+    text-transform: capitalize;
+}
+.browse-timeframe button{
+    width: 32%;
+}
+.browse-groupsize button{
+    width: 48%;
+}
+.AllFilters button span{
+    margin-left: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.mobile-filters-holder{
+    display: none;
+    width: 100%;
+}
+.mobile-filters-holder button{
+    width: 30%;
+}
+.mobile-filters-holder svg{
+    position: absolute;
+    top: -2px;
+    right: 50px;
+    color: #41187E;
+}
+@media(max-width: 600px){
+    .AllFilters{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 10px 15px 5px 15px;
+    }
+    .mobile-filters-holder{
+        display: initial;
+    }
+    .browse-category, .browse-timeframe, .browse-groupsize{
+        width: 100%;
+    }
+    .browse-category button, .browse-timeframe button, .browse-groupsize button{
+        width: 30%;
+    }
+    .hidden-filter{
+        opacity: 0;
+    }
+}
+@media(max-width: 750px) and (min-width: 601px){
+    .browse-category button{
+        width: 45%;
+    }
+    .browse-timeframe{
+        width: 29%;
+    }
+    .browse-timeframe button{
+        width: 45%;
+    }
+    .browse-groupsize{
+        width: 20%;
+    }
+}

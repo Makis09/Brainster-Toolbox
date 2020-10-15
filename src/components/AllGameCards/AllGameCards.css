@@ -1,0 +1,22 @@
+.AllGameCards{
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.AllGameCards .no-games{
+    color: white;
+    text-align: center;
+    margin: 100px auto 200px auto;
+}
+@media (max-width : 425px){
+    /* .AllGameCards{
+     
+    } */
+
+}
+@media (max-width : 600px){
+    .AllGameCards{
+        margin: 0 2%;
+        justify-content: center;
+    }
+}

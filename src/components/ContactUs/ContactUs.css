@@ -1,0 +1,45 @@
+.ContactUs{
+    min-height: 100vh;
+    background-color: #41187E;
+    color: white;
+}
+.ContactUs h1{
+    margin-top: 0;
+    padding-top: 15vh;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.contact-info-container{
+    display: flex;
+    justify-content: center;
+}
+.contact-info-container .contact-info{
+    padding: 5% 0 10% 0;
+    margin: auto;
+}
+.ContactUs ul li{
+    list-style-type: none;
+    display: inline-flex;
+    margin-right: 50px;
+}
+.ContactUs ul{
+    padding-left: 0;
+}
+.ContactUs .contact-info svg{
+    color: white;
+}
+.contact-info div{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.contact-info div svg{
+    margin-right: 10px;
+}
+.ContactUs footer{
+    position: relative;
+}
+@media(max-width: 360px){
+    .contact-info-container{
+        margin-bottom: 30px;
+    }
+}

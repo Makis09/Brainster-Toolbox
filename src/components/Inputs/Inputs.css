@@ -1,0 +1,104 @@
+.inputContainer{
+    position: relative;
+    width: 35%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+.inputBox input, .inputBox select{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #41187E;
+}
+.inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.inputBox input:focus + label,
+.inputBox input:valid + label{
+    top: -35px;
+    left: -10px;
+}
+.inputBox span{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 3px;
+    pointer-events: none;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span{
+    height: 100%;
+}
+input[type="submit"]{
+    width: 300px;
+    display: block;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    color: #41187E;
+    border-radius: 50px;
+}
+.inputContainer .inputBox select{
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 3px;
+}
+.select-field-label{
+    top: -15px !important;
+}
+.inputBox select option{
+    background-color: white;
+    color: #41187E;
+    padding: 2px;
+}
+.inputBox textarea{
+    margin-top: 20px;
+    color: #41187E;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50%;
+}
+@media(max-width: 600px){
+    .inputContainer, .textareaAndSubmitContainer{
+        width: 85% !important;
+    }
+    input[type="submit"]{
+        width: 200px !important;
+    }
+}
+@media(max-width: 1024px){
+    .inputContainer, .textareaAndSubmitContainer{
+        width: 46%;
+    }
+}

@@ -1,0 +1,19 @@
+
+.App{
+    font-family: 'Ubuntu';
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.orange-text{
+    color: #F7D042;
+}
+.Loading{
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}

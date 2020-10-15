@@ -1,0 +1,33 @@
+.LoginContainer{
+    position: relative;
+    height: 100vh;
+    background-color: #41187E;
+}
+.LoginContainer .Footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.LoginContainer h1{
+    padding-top: 20vh;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.LoginContainer form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.LoginContainer .inputContainer{
+    width: 300px;
+}
+.LoginContainer input[type="submit"]{
+    margin: 50px auto;
+}
+/* @media(max-width: 350px){
+    
+} */

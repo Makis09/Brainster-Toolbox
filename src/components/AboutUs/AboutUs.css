@@ -1,0 +1,90 @@
+.AboutUs{
+    min-height: 100vh;
+    background-color: #41187E;
+    position: relative;
+}
+.AboutUs h1{
+    color: white;
+    margin-top: 0;
+    padding-top: 15vh;
+    text-align: center;
+}
+.AboutUs h4{
+    color: white;
+    text-align: center;
+    padding: 0 10%;
+}
+.courses-and-academies-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.Courses, .Academies{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.CourseCard{
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+    background-color: white;
+    color: #41187E;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.AboutUs h2{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.CourseCard h3{
+    margin: 60px 0;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.CourseCard span{
+    margin-left: -100vw;
+    text-align: center;
+    padding: 10px 20px;
+    width: fit-content;
+    background-color: #F7D042;
+    color: black;
+    font-weight: bold;
+    border-radius:8px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+@media(max-width: 420px){
+    .CourseCard{
+        width: 100% !important;
+    }
+}
+@media(max-width: 600px){
+    .CourseCard{
+        width: 46%;
+    }
+}
+@media(max-width: 1200px){
+    .courses-and-academies-container{
+        flex-wrap: wrap;
+    }
+    .Courses, .Academies{
+        width: 80%;
+    }
+    .Courses, .Academies{
+        padding: 30px;
+    }
+    .CourseCard span{
+        margin: 0 auto;
+        opacity: 1;
+    }
+    .CourseCard h3{
+        margin: 10px 0;
+    }
+}
